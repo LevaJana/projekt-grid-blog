@@ -34,6 +34,110 @@ blockquote {
 	--limetka: #c4e538;
 }
 
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	gap: 0 40px;
+	align-items: start;
+}
+
+img {
+	width: 100%;
+}
+
+.blog > p, header, h2, footer {
+	grid-column: 2 / 3;
+}
+
+.tip-vlevo {
+	grid-column: 1 / 2;
+	border-right: 3px solid var(--zluta);
+	text-align: right;
+}
+
+.tip-vpravo {
+	grid-column: 3 / 4;
+	border-left: 3px solid var(--zluta);
+}
+
+figure, blockquote {
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+.meta {
+	color: var(--seda);
+}
+
+p {
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 90px;
+	color: var(--zelena);
+	margin: 0 0 70px 0;
+	line-height: 1.2;
+}
+
+figure {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+figcaption {
+	color: var(--seda);
+}
+
+blockquote {
+	text-align: center;
+	font-size: 36px;
+	color: var(--seda);
+	margin: 20px 0;
+}
+
+blockquote::before, blockquote::after {
+	content: "";
+	display: block;
+	background-color: var(--limetka);
+	width: 120px;
+	height: 2px;
+	margin: 20px auto;
+}
+
+h2 {
+	font-size: 60px;
+	color: var(--zelena);
+	line-height: 1.2;
+	margin: 40px 0 20px 0;
+}
+
+footer p, footer a {
+	color: var(--seda);
+	font-size: 14px;
+}
+
+.tip {
+	background-color: var(--svetla);
+	padding: 20px;
+	font-size: 14px;
+	color: var(--tmava);
+}
+
+.tip p {
+	margin: 0;
+}
+
+.tip a {
+	color: var(--oranzova);
+}
+
+.tip img {
+	margin-bottom: 10px;
+}
+
+
+
 /*
 	Všimni si, jak jsou zde nadefinované barvy.
 	Potřebný kód barvy si odtamtud můžeš zkopírovat a použít
